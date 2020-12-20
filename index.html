@@ -1,18 +1,729 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skewed Layout: Sneakers | CSS Grid eCommerce Project</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Passion+One|Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Template | VanillaJS</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <header><h1>SNEAKERS</h1></header>
+    <ul>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>I-5923 RUNNER PRIDE</h2>
+          <p class="price">£99</p>
+          <img src="./assets/images/adidas01.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas02.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>STAN SMITH</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas03.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS2 PRIMEKNIT</h2>
+          <p class="price">£149</p>
+          <img src="./assets/images/adidas04.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>TUBULAR DUSK PRIMEKNIT</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas05.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_CS1 PRIMEKNIT</h2>
+          <p class="price">£150</p>
+          <img src="./assets/images/adidas06.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>SAMBAROSE</h2>
+          <p class="price">£75</p>
+          <img src="./assets/images/adidas07.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>POD-S3.1</h2>
+          <p class="price">£85</p>
+          <img src="./assets/images/adidas08.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>PROPHERE</h2>
+          <p class="price">£90</p>
+          <img src="./assets/images/adidas09.png" alt="" />
+        </div>
+      </li>
+      <li>
+        <div>
+          <h2>NMD_R1</h2>
+          <p class="price">£109</p>
+          <img src="./assets/images/adidas10.png" alt="" />
+        </div>
+      </li>
+    </ul>
 
-<body>
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
